@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
 
-import logo from "../../images/foli-logo.svg";
+import logo from "../../images/foli-logo.png";
 
 const HeaderWrapper = styled.div`
-  background: rgba(1, 1, 1, 0.4);
-  background: black;
+  background: rgba(1, 1, 1, 0.2);
+  background: transparent;
 `;
 
 const HeaderContainer = styled.div`
@@ -45,6 +45,8 @@ const Navigation = styled.div`
         color: white;
         text-decoration: none;
         position: relative;
+        font-family: League Spartan;
+        letter-spacing: 2px;
 
         &:after {
           content: "";

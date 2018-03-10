@@ -3,10 +3,27 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import Image from "gatsby-image";
 
+import videoBg from "../images/video-bg.mp4";
+
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 103;
+  .inside {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    top: 40%;
+    color: white;
+    font-family: League Spartan;
+
+    h1 {
+      font-family: League Spartan;
+      margin-bottom: 8px;
+    }
+  }
 `;
 
 const FullScreenBackground = styled.div`
@@ -25,7 +42,7 @@ const FullScreenBackground = styled.div`
     height: 100%;
     background-color: black;
     z-index: 2;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 `;
 
@@ -37,7 +54,7 @@ export default class IndexPage extends Component {
     return (
       <FullScreenBackground>
         <div className="background-overlay" />
-        <Image
+        {/* <Image
           style={{
             position: "absolute",
             left: 0,
@@ -46,13 +63,31 @@ export default class IndexPage extends Component {
             height: "100%"
           }}
           sizes={data.background.sizes}
-        />
-
+        /> */}
+        <video
+          autoPlay
+          muted
+          loop
+          id="myVideo"
+          style={{
+            position: "fixed",
+            left: 0,
+            top: 0,
+            width: "auto",
+            height: "auto",
+            minWidth: "100%",
+            minHeight: "100%",
+            left: "50%",
+            transform: "translateX(-50%)"
+          }}
+        >
+          <source src={videoBg} type="video/mp4" />
+        </video>
         <Container>
-          <h1>Hi people</h1>
-          <p>Welcome to your new Gatsby site.</p>
-          <p>Now go build something great.</p>
-          <Link to="/page-2/">Go to page 2</Link>
+          <div className="inside">
+            <h1>hi im josh</h1>
+            <p>welcome to my little universe</p>
+          </div>
         </Container>
       </FullScreenBackground>
     );
