@@ -108,13 +108,13 @@ export default class ContactPage extends Component {
               <label>
                 First Name <span className="required">*</span>
               </label>
-              <input type="text" name="name" />
+              <input type="text" name="first-name" />
             </p>
             <p>
               <label>
                 Last Name <span className="required">*</span>
               </label>
-              <input type="text" name="name" />
+              <input type="text" name="last-name" />
             </p>
             <p>
               <label>
@@ -126,11 +126,11 @@ export default class ContactPage extends Component {
               <label>
                 Phone <span className="required">*</span>
               </label>
-              <input type="email" name="email" />
+              <input type="text" name="phone" />
             </p>
             <p>
               <label>Company</label>
-              <input type="email" name="email" />
+              <input type="text" name="company" />
             </p>
             <p>
               <label>
