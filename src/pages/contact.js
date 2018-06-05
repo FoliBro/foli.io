@@ -104,7 +104,7 @@ export default class ContactPage extends Component {
             Have a question, interested in a project or want to discuss
             crossfit? Get in touch below!
           </p>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" netlify>
             <p>
               <label>
                 First Name <span className="required">*</span>
