@@ -91,7 +91,7 @@ export default class ContactPage extends Component {
       <div
         style={{
           backgroundColor: "#3B6478",
-          height: "100vh",
+          height: "100%",
           display: "flex",
           justifyContent: "center",
           alignIitems: "center"
