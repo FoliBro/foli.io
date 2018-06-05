@@ -55,6 +55,7 @@ const Container = styled.div`
       border: none;
       padding: 8px;
       color: white;
+      margin-top: 4px;
     }
 
     textarea {
@@ -105,38 +106,40 @@ export default class ContactPage extends Component {
           </p>
           <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label for="first-name">
+              <label>
                 First Name <span className="required">*</span>
+                <input type="text" name="first-name" />
               </label>
-              <input type="text" name="first-name" />
             </p>
             <p>
-              <label for="last-name">
+              <label>
                 Last Name <span className="required">*</span>
+                <input type="text" name="last-name" />
               </label>
-              <input type="text" name="last-name" />
             </p>
             <p>
-              <label for="email">
+              <label>
                 Email <span className="required">*</span>
+                <input type="email" name="email" />
               </label>
-              <input type="email" name="email" />
             </p>
             <p>
-              <label for="phone">
+              <label>
                 Phone <span className="required">*</span>
+                <input type="text" name="phone" />
               </label>
-              <input type="text" name="phone" />
             </p>
             <p>
-              <label for="company">Company</label>
-              <input type="text" name="company" />
+              <label for="company">
+                Company
+                <input type="text" name="company" />
+              </label>
             </p>
             <p>
               <label for="message">
                 Message <span className="required">*</span>
+                <textarea name="message" />
               </label>
-              <textarea name="message" />
             </p>
             <p>
               <button type="submit">Submit</button>
