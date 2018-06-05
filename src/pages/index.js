@@ -65,7 +65,7 @@ export default class IndexPage extends Component {
           sizes={data.background.sizes}
         /> */}
         <video
-          autoPlay
+          //autoPlay
           muted
           loop
           id="myVideo"
