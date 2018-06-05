@@ -104,7 +104,18 @@ export default class ContactPage extends Component {
             Have a question, interested in a project or want to discuss
             crossfit? Get in touch below!
           </p>
-          <form name="contact" action="/" method="POST" data-netlify="true">
+          <form
+            name="contactForm"
+            netlify-honeypot="bot-field"
+            action="/"
+            method="POST"
+            netlify
+          >
+            <p style="display:none;">
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
             <p>
               <label>
                 First Name <span className="required">*</span>
