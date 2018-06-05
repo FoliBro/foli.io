@@ -105,35 +105,35 @@ export default class ContactPage extends Component {
           </p>
           <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label>
+              <label for="first-name">
                 First Name <span className="required">*</span>
               </label>
               <input type="text" name="first-name" />
             </p>
             <p>
-              <label>
+              <label for="last-name">
                 Last Name <span className="required">*</span>
               </label>
               <input type="text" name="last-name" />
             </p>
             <p>
-              <label>
+              <label for="email">
                 Email <span className="required">*</span>
               </label>
               <input type="email" name="email" />
             </p>
             <p>
-              <label>
+              <label for="phone">
                 Phone <span className="required">*</span>
               </label>
               <input type="text" name="phone" />
             </p>
             <p>
-              <label>Company</label>
+              <label for="company">Company</label>
               <input type="text" name="company" />
             </p>
             <p>
-              <label>
+              <label for="message">
                 Message <span className="required">*</span>
               </label>
               <textarea name="message" />
